@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import RightPart from './components/RightPart'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="min-h-screen lg:p-10 bg-[#000000de] flex lg:flex-row flex-col 
+      shadow-[inset_0px_0px_10px_10px_rgba(0,0,0,0.75)] shadow-black lg:justify-center items-center"
+    >
+      <div
+        className="w-[680px] lg:w-[736px] h-[200px] lg:h-[550px] rounded-[27px] border-[1px] border-[#96BEE7]
+                  bg-[#616161D1] mt-10 lg:mt-0"
+      >
+      </div>
+      <RightPart />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
